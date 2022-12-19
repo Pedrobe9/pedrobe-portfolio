@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+/*Setting variables*/
+:root {
+  --navy: rgb(2, 2, 77);
+  --sky: rgba(59, 197, 244, 1);
+  --pic-border: solid 4px var(--sky);
+}
+
+/*General features*/
 body {
   margin: 0;
   padding: 0;
@@ -21,3 +29,220 @@ h6 {
 p {
   margin: 0;
 }
+
+/*Header*/
+#top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  background-color: var(--navy);
+}
+
+.left {
+  width: 30%;
+  color: var(--navy);
+  background-color: var(--sky);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-size: 250%;
+  text-align: right;
+
+}
+
+/*Navigation bar*/
+#navBar {
+  margin-right: 40px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: linear-gradient(270deg, var(--sky) 0%, var(--sky) 100%);
+  transition: all 0.25s ease-in;
+}
+
+.menu {
+  text-decoration-line: none;
+  color: var(--sky);
+  padding: 5px 5px;
+  border: 5px;
+  border-bottom-style: solid;
+  border-color: var(--sky);
+  margin: 5px;
+  font-size: 140%;
+}
+
+/*-----Banner-----*/
+#banner {
+  background-image: url("../images/cod-symb.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-blend-mode: soft-light;
+  min-height: 25vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+#banner-txt {
+  color: var(--navy);
+  background-color: var(--sky);
+  padding: 10px;
+  border: solid 2px;
+  margin: 0 50px 20px 10px;
+}
+
+/* -----Main section -----*/
+main {
+  margin: 10px;
+  align-items: center;
+}
+
+.page-section {
+  width: 90vw;
+  margin: 0px 5%;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 15vw 30vw 30vw;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 100px;
+  grid-template-areas:
+    "about about-txt about-txt"
+    "work cheatsheet cheatsheet"
+    "work cheatsheet cheatsheet"
+    "work cheatsheet cheatsheet"
+    "work furn-shop led-wall"
+    "work calculator run-buddy"
+    "contact contact-txt contact-txt";
+  grid-gap: 15px;
+}
+
+/*-----About me section-----*/
+#about {
+  grid-area: about;
+}
+
+#about-txt {
+  grid-area: about-txt;
+  display: flex;
+  align-items: center;
+}
+
+/*-----Work section-----*/
+#work {
+  grid-area: work;
+}
+
+#cheatsheet {
+  grid-area: cheatsheet;
+  background-image: url("../images/css-cheatsheet.png");
+  border: var(--pic-border);
+}
+
+#furn-shop {
+  grid-area: furn-shop;
+  background-image: url("../images/furn-shop.png");
+  border: var(--pic-border);
+}
+
+#led-wall {
+  grid-area: led-wall;
+  background-image: url("../images/02-portfolio-1.jpg");
+  border: var(--pic-border);
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+  border: var(--pic-border);
+}
+
+#run-buddy {
+  grid-area: run-buddy;
+  background-image: url("../images/02-run-buddy.jpg");
+  border: var(--pic-border);
+}
+
+/*-----Contact section-----*/
+#contact {
+  grid-area: contact;
+}
+
+#contact-txt {
+  grid-area: contact-txt;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-foot {
+  text-decoration-line: none;
+  color: var(--navy);
+  padding: 5px 5px;
+  border: 5px;
+  border-bottom-style: solid;
+  border-color: var(--navy);
+  margin: 5px;
+  font-size: 150%;
+}
+
+.categoryGridArea {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: end;
+  justify-content: start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.categoryGridArea:hover .image {
+  opacity: 0.3;
+}
+
+.heading {
+  bottom: 10px;
+  background-color: var(--sky);
+  line-height: 1;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  color: var(--navy);
+}
+
+#work,
+#about,
+#contact {
+  text-align: right;
+  padding: 10px;
+  border-right: solid 5px;
+  font-size: 200%;
+}
+
+footer p {
+  text-align: right;
+  padding-right: 20px;
+}
+

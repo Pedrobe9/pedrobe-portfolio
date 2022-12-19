@@ -6,86 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pedro // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <section>
-      <div class="left">
-        <h1>Pedro Bernal</h1>
-      </div>
-      <nav>    
-        <section class="nav">          
-            <div class="right">
-                <a href="#about">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contack Me</a>
-                <a href="#Resume">Resume</a>
-            </div>
-        </section>
+    <section id="top-header">
+      <h1 class="left">Pedro Bernal</h1>
+      <nav id="navBar">
+        <a class="menu" href="#about">About Me</a>
+        <a class="menu" href="#work">Work</a>
+        <a class="menu" href="#contact">Contack Me</a>
+        <a class="menu" href="#resume">Resume</a>
       </nav>
-    <!-- coding banner -->
     </section>
-    <section class="banner">
-      <div class="logo">
-        <h2>Best things I have done so far</h2>
-      </div>  
+    <!-- coding banner -->
+    <section id="banner">
+      <div>
+        <h2 id="banner-txt">Best things I have done so far</h2>
+      </div>
     </section>
   </header>
 
+  <!---------Main content------------->
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <aside>
-        <h2>About Me</h2>
-      </aside>
-      <p>BSc (Hons) Chemistry and PGDip Nursing graduate with good organisational 
-        skills developed working with both, public and private companies, who decided 
-        to give a radical change to his working life and to start coding. This is a 
+    <section class="page-section">
+      <h2 id="about">About<br />Me</h2>
+      <p id="about-txt" class="categoryGridArea">BSc (Hons) Chemistry and PGDip Nursing graduate with good
+        organisational
+        skills developed working with both, public and private companies, who decided
+        to give a radical change to his working life and to start coding. This is a
         representation of the projects I have made. so far...</p>
-    </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <aside>
-        <h2>Work</h2>
-      </aside>
-      <div>
-        <img src="./images/css-cheatsheet.png" alt="CSS Snippet Cheatsheet Screenshot">
-      </div>
-      <div>
-        <img src="./images/furn-shop.png" alt="Furniture Shop Screenshot">
-      </div>
-      <div>
-        <img src="./images/02-portfolio-1.jpg" alt="Led Wall Screenshot">
-      </div>
-      <div>
-        <img src="./images/02-portfolio-2.jpg" alt="Calculator Program Screenshot">
-      </div>
-      <div>
-        <img src="./images/02-run-buddy.jpg" alt="Run Buddy Program Screenshot">
-      </div>
-    </section>
+      <!-- portfolio container -->
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <aside>
-        <h2>Contact Me</h2>
-      </aside>
-    </section>
+      <h2 id="work">Work</h2>
 
+      <div id="cheatsheet" class="categoryGridArea" class="image">
+        <h3 class="heading">Cheatsheet<br /><small></small>HTML/CSS<small></small></h3>
+      </div>
+
+      <div id="furn-shop" class="categoryGridArea" class="image">
+        <h3 class="heading">Furniture shop<br /><small>HTML/CSS</small></h3>
+      </div>
+
+      <div id="led-wall" class="categoryGridArea" class="image">
+        <h3 class="heading">Led Wall</h3>
+      </div>
+
+      <div id="calculator" class="categoryGridArea">
+        <h3 class="heading">Calculator</h3>
+      </div>
+
+      <div id="run-buddy" class="categoryGridArea">
+        <h3 class="heading">Run Buddy</h3>
+      </div>
+
+      <h2 id="contact">Contact<br />Me</h2>
+      <nav id="contact-txt" class="categoryGridArea">
+        <a class="contact-foot" href="">07x xxxx xxxx</a>
+        <a class="contact-foot" href="">email</a>
+        <a class="contact-foot" href="">GitHub</a>
+        <a class="contact-foot" href="">Facebook</a>
+        <a class="contact-foot" href="">Twitter</a>
+      </nav>
+    </section>
     <!-- Resume -->
-    <section class="page-section" id="Resume">
-      <aside>
-        <h2>Resume</h2>
-      </aside>
-    </section>
+
   </main>
   <footer>
     <div>
-      <p>© Pedro Bernal<br/>2022</p>
+      <p>© Pedro Bernal, 2022</p>
     </div>
   </footer>
 </body>
